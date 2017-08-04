@@ -4,3 +4,11 @@ E:\dev\Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
 E:\dev\Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
 E:\dev\Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
 E:\dev\Calculator\Calculator\Calculator\obj\Debug\CalculatorConsole.csprojResolveAssemblyReference.cache
+e:\Dev\Students\Ilya\MyCalculator\Calculator\bin\Debug\Calculator.exe.config
+e:\Dev\Students\Ilya\MyCalculator\Calculator\bin\Debug\Calculator.exe
+e:\Dev\Students\Ilya\MyCalculator\Calculator\bin\Debug\Calculator.pdb
+e:\Dev\Students\Ilya\MyCalculator\Calculator\bin\Debug\CalculatorClass.dll
+e:\Dev\Students\Ilya\MyCalculator\Calculator\bin\Debug\CalculatorClass.pdb
+e:\Dev\Students\Ilya\MyCalculator\Calculator\obj\Debug\CalculatorConsole.csprojResolveAssemblyReference.cache
+e:\Dev\Students\Ilya\MyCalculator\Calculator\obj\Debug\Calculator.exe
+e:\Dev\Students\Ilya\MyCalculator\Calculator\obj\Debug\Calculator.pdb
