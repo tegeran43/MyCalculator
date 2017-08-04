@@ -1,0 +1,4 @@
+E:\dev\Calculator\Calculator\CalculatorClass\bin\Debug\CalculatorClass.dll
+E:\dev\Calculator\Calculator\CalculatorClass\bin\Debug\CalculatorClass.pdb
+E:\dev\Calculator\Calculator\CalculatorClass\obj\Debug\CalculatorClass.dll
+E:\dev\Calculator\Calculator\CalculatorClass\obj\Debug\CalculatorClass.pdb
