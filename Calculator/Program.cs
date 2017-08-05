@@ -5,7 +5,7 @@ namespace CalculatorConsole
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var input = Console.ReadLine();
             var calculator = new Calculator();
@@ -13,6 +13,7 @@ namespace CalculatorConsole
 
             Console.WriteLine(result);
             Console.ReadKey();
+
         }
     }
 }
