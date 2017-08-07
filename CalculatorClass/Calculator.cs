@@ -15,8 +15,9 @@ namespace CalculatorClass
             var statements = FillingString(numbers, operators).MultDiv().AddSubtr();
 
             //statements = MultDiv(statements);
-            //statements = AddSubtr(statements);
+           //statements = AddSubtr(statements);
 
+            
             return OutputResult(statements);
         }
         
@@ -24,7 +25,6 @@ namespace CalculatorClass
         private string[] FillingString(string[] numbers, string[] operators)
         {
             var statements = new string[numbers.Length + operators.Length];
-
             for (int i = 0, j = 1, k = 0; i < statements.Length; i += 2, j += 2, k++)
             {
                 statements[i] = numbers[k];
@@ -38,24 +38,31 @@ namespace CalculatorClass
             return statements;
         }
 
-        //Выполняет действия "*,/", другие не учитываются
-        private string[] MultDiv(string[] statements)
+        private static string OutputResult(string[] simpleStatement)
+        {
+            return simpleStatement[simpleStatement.Length - 1];
+        }
+    }
+    public static class ExtensionClass
+    {
+        //Выполняет действия "*, /", другие не учитываются
+        public static string[] MultDiv(this string[] statements)
         {
             int countnull = 0;
             for (int i = 1; i < statements.Length - 1; i++)
             {
                 if (statements[i] == "*")
                 {
-                    statements[i - 1] = Convert.ToString(Convert.ToDouble(statements[i - 1]) * Convert.ToDouble(statements[i + 1]));
+                    statements[i + 1] = Convert.ToString(Convert.ToDouble(statements[i - 1]) * Convert.ToDouble(statements[i + 1]));
+                    statements[i - 1] = null;
                     statements[i] = null;
-                    statements[i + 1] = null;
                     countnull += 2;
                 }
                 if (statements[i] == "/")
                 {
-                    statements[i - 1] = Convert.ToString(Convert.ToDouble(statements[i - 1]) / Convert.ToDouble(statements[i + 1]));
+                    statements[i + 1] = Convert.ToString(Convert.ToDouble(statements[i - 1]) / Convert.ToDouble(statements[i + 1]));
+                    statements[i - 1] = null;
                     statements[i] = null;
-                    statements[i + 1] = null;
                     countnull += 2;
                 }
             }
@@ -71,10 +78,12 @@ namespace CalculatorClass
                 }
             }
             return simpleStatement;
+
+            
         }
 
         //Вычисляет простое выражение(при вхоящих знаках "+,-") из входящего массива строк
-        private string[] AddSubtr(string[] simpleStatement)
+        public static string[] AddSubtr(this string[] simpleStatement)
         {
             for (int i = 1; i < simpleStatement.Length - 1; i++)
             {
@@ -93,10 +102,6 @@ namespace CalculatorClass
             }
             return simpleStatement;
         }
-
-        private string OutputResult(string[] simpleStatement)
-        {
-            return simpleStatement[simpleStatement.Length - 1];
-        }
     }
+
 }
