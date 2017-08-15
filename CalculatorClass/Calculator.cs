@@ -4,6 +4,7 @@ namespace CalculatorClass
 {
     public class Calculator
     {
+        
         private readonly char[] _characterSet = {'-', '+', '*', '/'};
         private readonly char[] _digitSet = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', '.' };
 
@@ -14,10 +15,6 @@ namespace CalculatorClass
 
             var statements = FillingString(numbers, operators).MultDiv().AddSubtr();
 
-            //statements = MultDiv(statements);
-           //statements = AddSubtr(statements);
-
-            
             return OutputResult(statements);
         }
         
@@ -38,7 +35,7 @@ namespace CalculatorClass
             return statements;
         }
 
-        private static string OutputResult(string[] simpleStatement)
+        private  string OutputResult(string[] simpleStatement)
         {
             return simpleStatement[simpleStatement.Length - 1];
         }

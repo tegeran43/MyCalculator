@@ -11,4 +11,3 @@ E:\dev\Test.Calculator\CalculatorClass\bin\Debug\CalculatorClass.dll
 E:\dev\Test.Calculator\CalculatorClass\bin\Debug\CalculatorClass.pdb
 E:\dev\Test.Calculator\CalculatorClass\obj\Debug\CalculatorClass.dll
 E:\dev\Test.Calculator\CalculatorClass\obj\Debug\CalculatorClass.pdb
-E:\dev\Test.Calculator\CalculatorClass\obj\Debug\CalculatorClass.csprojResolveAssemblyReference.cache

@@ -4,6 +4,8 @@ namespace CalculatorClass
 {
     public static class ExtensionCalculator
     {
+        public static void Hello() { }
+
         //¬ыполн€ет действи€ "*, /", другие не учитываютс€
         public static string[] MultDiv(this string[] statements)
         {
